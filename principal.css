@@ -33,11 +33,6 @@ h1{
 	font-size: 45px;
 }
 
-
-ul li {
-
-}
-
 .menu-horizontal{
 	list-style: none;
 	display: flex;
@@ -82,4 +77,10 @@ ul li {
 	max-width: 900px;
 	background: white;
 
+}
+
+@media (max-width: 800px) {
+	#central {
+		flex-direction: column;
+	}
 }
