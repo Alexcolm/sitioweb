@@ -7,24 +7,22 @@
 }
 body{
  
-    background: url(./img/2641100.gif);   
+    background: url(./img/2641100.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 nav{
-	max-width: 1300px;
-	display: flex;
+	max-width: 1500px;
+	display:flex;
 	justify-content: space-between;
 	margin: auto;
 	font-size: 20px;
-	padding-top: 0%;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding: 0px 0px 0px 5px;
 	align-items:end;
-	background-color:rgb(2, 2, 2);
-	border: 2px solid white; 
+	background-color:rgb(2, 2, 2, 0.3);
+	border: 2px solid rgb(255, 255, 255); 
 }
 
 h1{
@@ -33,20 +31,32 @@ h1{
 	font-size: 45px;
 }
 
+
+
+
+.logo{
+	color: white;
+	font-weight:bolder;
+	font-size: 40px;
+	padding: 1px 1px 20px 1px;
+	margin: 0px;
+}
+
 .menu-horizontal{
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+	margin: 10px;
 }
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-decoration:none;
+	margin: 10px 0px;	
 }
-
 .menu-horizontal > li:hover{
-	background-color: rgb(14, 77, 82);
+	background-color: rgb(10, 14, 219);
 }
 
 .menu-vertical{
@@ -68,7 +78,7 @@ h1{
 	display: block;
 	color: white;
 	text-decoration: none;
-	padding: 15px 15px 15px 20px;
+	padding: 20px 5px;
 }
 
 #html{
@@ -76,11 +86,79 @@ h1{
 	padding: 20px;
 	max-width: 900px;
 	background: white;
-
 }
 
-@media (max-width: 800px) {
-	#central {
-		flex-direction: column;
+.cabecera-pagina{ 
+	display: block;
+	padding: 15px 20px;
+	color: rgb(255, 255, 255);
+	text-decoration:none;
+	margin: 10px 0px;
+}
+.cabecera-pagina-movil{
+	visibility: hidden;
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		/*flex-direction:column;*/
+		background-color: brown;
+		/*background: url(./img/2641100.gif);*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 	}
+	.logo{
+		color: rgb(241, 241, 241);
+		font-size: 50px;
+	}
+	.menu-horizontal{
+		list-style: none;
+		display:flex;
+		justify-content:flex-start;
+		margin: 10px;
+	}
+
+	.menu-horizontal > li > a{
+		display: block;
+		padding: 15px 20px;
+		color: rgb(18, 250, 211);
+		text-decoration:none;
+		margin: 10px 0px;	
+	}
+	.cabecera-pagina{
+		visibility: hidden;
+        display: none;
+		color: brown;
+	}
+
+	.cabecera-pagina-movil{
+		display: block;
+		padding: 15px 20px;
+		color: rgb(255, 255, 255);
+		text-decoration:none;
+		margin: 10px 0px;
+	}
+	.cabecera-pagina-movil{
+		visibility:visible;
+		display:block;
+	}
+}
+
+.box{
+	height: 100px;
+	width: 100px;
+	background-color: rgb(23, 217, 243);
+	font-size: 40px;
+}
+
+.body-box{
+display: flex;
+justify-content: space-around;
+align-items: end;
+min-height: 100px;
+flex-direction: column;
+gap: 10px; /*espacio entre los objetos*/
+flex-wrap:wrap;
 }
