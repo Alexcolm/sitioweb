@@ -16,7 +16,7 @@ body{
 
 .slide-track{
     display: flex;
-    width: calc(350px * 9);
+    width: calc(350px * 10);
     animation: scroll 40s linear infinite;
 }
 
@@ -28,7 +28,7 @@ body{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-350px *9));
+        transform: translateX(calc(-350px *10));
     }
 }
 .slide{
@@ -49,18 +49,8 @@ img{
 img:hover{
     transform: translateZ(20px);
 }
-/*.slide::before,
-.slide::after{
-    background: linear-gradient(to right,rgba(255,255,255,1) 0%, 
-    rgba(255,255,255,0) 100%);
-    content:"";
-    height: 100%;
-    position: absolute;
-    width: 20%;
-    z-index: 3;
 
-}
-*/
+
 .slide::before{
     left: 0;
     top: 0;
